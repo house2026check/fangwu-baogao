@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>房屋鉴定报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "SimSun", "宋体", serif;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 18mm auto;
+            padding: 0 10mm;
+            background: #fff;
+        }
+        .title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 9px 12px;
+            line-height: 1.7;
+        }
+        .left-col {
+            text-align: center;
+            width: 15%;
+            font-weight: bold;
+        }
+        .footer { font-size: 16px; }
+        .qrcode-container {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .qrcode {
+            width: 70mm;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">报告编号：粤检鉴字【2026】DHY1-0018</div>
+    <table>
+        <tr><td class="left-col">房屋地址</td><td>广州市白云区广从十路269号</td><td class="left-col">委托单位</td><td>广州知行供应链管理有限公司</td></tr>
+        <tr><td class="left-col">结构形式</td><td>钢结构</td><td class="left-col">竣工年份</td><td>2010年</td></tr>
+        <tr><td class="left-col">用途</td><td>厂房</td><td class="left-col">鉴定楼层</td><td>一层</td></tr>
+        <tr><td class="left-col">建筑高度</td><td>6.5m</td><td class="left-col">检测面积</td><td>约3600㎡</td></tr>
+        <tr><td class="left-col">安全性<br>鉴定结论</td><td colspan="3">本房屋的结构安全性评定为（二）级，满足结构使用安全要求。<br>本报告有效期为5年，仅对结构安全作出鉴定，其它方面由相关单位处理。</td></tr>
+        <tr><td class="left-col">处理建议</td><td colspan="3">建筑物使用期间应注意定期维护检查，如需进行涉及结构荷载较大变化的改造，或有倾斜、裂缝发展等情况，业主应及时向具备资质的技术单位反映情况以便采取有效处理措施。要求业主在后期使用过程中，不上人屋面不得大于0.5kN/㎡，未经技术鉴定或设计许可，不得改变结构的用途和使用环境，不得拆改结构构件和进行加层改造。</td></tr>
+    </table>
+    <div class="footer">检测单位：广东粤检工程质量检测有限公司<br>出具日期：2026年5月</div>
+    <div class="qrcode-container">
+        < img src="qrcode.png" alt="报告二维码" class="qrcode">
+    </div>
+</body>
+</html>

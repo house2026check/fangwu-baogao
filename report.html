@@ -46,7 +46,7 @@
         .main-title {
             font-size: 22px;
             font-weight: bold;
-            text-align: left;
+            text-align: left; /* 标题恢复左对齐 */
             margin-bottom: 15px;
         }
         table {
@@ -54,21 +54,26 @@
             border-collapse: collapse;
             font-size: 16px;
             margin-bottom: 15px;
+            table-layout: fixed; /* 固定表格布局，宽度不跑偏 */
         }
         td {
             border: 1px solid #000;
-            padding: 9px 10px;
+            padding: 9px 12px;
             line-height: 1.6;
             vertical-align: middle;
         }
-        /* 重点修改：加宽左侧单元格，并强制单行 */
+        /* 左侧单元格加宽至40%，强制单行不换行 */
         td:first-child {
-            width: 35%;
+            width: 40%;
             font-weight: bold;
             text-align: center;
             white-space: nowrap;
+            overflow: hidden;
         }
-        /* 长文本单元格单独放行，允许换行 */
+        td:last-child {
+            text-align: left;
+            white-space: normal;
+        }
         .long-text {
             white-space: normal;
         }
